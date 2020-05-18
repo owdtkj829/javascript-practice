@@ -1,0 +1,16 @@
+// 商品のインターフェイスを作る
+interface Item {
+    name: string;
+    price: number;
+}
+
+// フルーツを定義するクラス
+class Fruit implements Item {
+    public name: string = '';
+    public price: number = 0;
+}
+// 書籍を定義するクラス
+class Book implements Item {
+    public name: string = '';
+    public price: number = 0;
+}

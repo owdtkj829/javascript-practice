@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+    <div class="frame">
+        <h1 class="frame__title">JavaScript</h1>
+
+        <div class="frame__inner">
+            <!-- ここに、JavaScriptを記述します -->
+            <script>
+                // Itemクラスを定義する
+                class Item {
+                    // コンストラクターを定義する
+                    constructor(price) {
+                        // プロパティを定義する
+                        this.tax = 10; // 消費税は 10%
+                        if (isFinite(price)) {
+                            this.price = price;
+                        } else {
+                            this.price = 0;
+                        }
+                    }
+                
+
+                    // 消費税を取得するメソッド
+                    getTax() {
+                        return Math.round(this.price * (10 / 100));
+                    }
+                }
+                
+                const price = parseInt(prompt('商品の金額を入力してください'));
+                const item = new Item(price);
+
+                let tax = item.getTax();
+                if (tax) {
+                    document.write(`${price}円の消費税は、${tax}円です`);
+                } else {
+                    document.write('数字を入力してください');
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

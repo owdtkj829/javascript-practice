@@ -1,0 +1,7 @@
+const addMark = <T>(message: T): string => {
+    return ('■' + message);
+}
+
+
+console.log(addMark<number>('number型に文字列を指定'));
+

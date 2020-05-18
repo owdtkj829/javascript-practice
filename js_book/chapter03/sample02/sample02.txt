@@ -1,0 +1,6 @@
+// 変数に数字を代入
+let x: number = 1;
+let y: number = 2;
+
+// かけ算の結果を表示
+console.log(x * y);

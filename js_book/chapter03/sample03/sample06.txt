@@ -1,0 +1,6 @@
+const addMark = (message: any): string => {
+    return ('■' + message);
+}
+
+console.log(addMark('文字列を指定します'));
+console.log(addMark(10));

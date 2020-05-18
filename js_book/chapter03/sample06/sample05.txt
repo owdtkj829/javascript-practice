@@ -1,0 +1,6 @@
+class Book {
+    readonly name: string = 'JavaScript入門';
+}
+let mybook = new Book();
+console.log(mybook.name);
+//mybook.name = 'TypeScript入門';

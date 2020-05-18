@@ -1,0 +1,4 @@
+let x: any = 10;
+
+x = '文字列で上書きします';
+console.log(x);

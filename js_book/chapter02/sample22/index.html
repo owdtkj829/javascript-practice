@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+    <div class="frame">
+        <h1 class="frame__title">JavaScript</h1>
+
+        <div class="frame__inner">
+            <p>メールアドレス： <input type="email" name="email" id="">
+            <span style="color: #f33"></span>
+            </p>
+            <!-- ここに、JavaScriptを記述します -->
+            <script>
+                const email = document.querySelector('input[name="email"]')
+                
+                // フォーカスが外れたときに、空の場合はエラーを表示する
+                email.addEventListener('blur', () => {
+                    if (email.value === '') {
+                        email.style.backgroundColor = '#fcc';
+                        email.nextElementSibling.innerHTML = '※ メールアドレスをご記入ください';
+                    } else {
+                        email.style.backgroundColor = '#fff';
+                        email.nextElementSibling.innerHTML = '';
+                    }
+                });
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+let myname = 'たにぐちまこと';
+let height = 169;
+
+myname = 10;
+height = '分からない';
